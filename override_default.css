@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa&display=swap');
+body {
+    font-family: 'Changa', cursive !important;
+}
+.btn {
+    font-size: 20px;
+    color: rgb(87, 140, 240);
+    background-color: transparent;
+    border: none !important;
+}
+
+.collapse li{
+    font-size: 20px;
+    list-style: circle;
+}
+.btn:hover, .btn:active, .btn:checked{
+    background-color: transparent !important;
+    border: none !important;
+    color: rgb(24, 58, 121);
+}
+
+
+.item-1, .item-2,.item-3,.item-4{
+    font-size: 15px;
+}
+
+.elems > li{
+    font-size: 20px;
+}

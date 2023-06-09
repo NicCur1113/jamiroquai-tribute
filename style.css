@@ -1,0 +1,268 @@
+body{
+    background-color: gainsboro;
+}
+.headercontainer{
+    display: inline-flex;
+    height: 1000px;
+    width: 100%;
+    border-color: transparent;
+    background-color: rgb(33, 32, 119);
+    background:linear-gradient(180deg, rgb(94, 174, 248), transparent);
+}
+
+.slide {
+    position: absolute;
+    bottom: 15rem;
+    left: 58rem;
+    height: 85%;
+    width: 40%;
+    animation: rotate 6s infinite ease-in-out;
+    animation-delay: -4s;
+}
+
+.headercontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    color: white;
+}
+
+#topnav a:link, #topnav a:active, #topnav a:visited, #topnav li {
+    color: white;
+    text-decoration: none;
+    flex-direction: row;
+    list-style: none;
+    font-family: 'Changa', cursive;
+    font-size: 25px;
+}
+
+#topnav li:hover{
+    text-decoration: underline;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg); 
+    }
+    0%, 100% {opacity: 0;}
+    50%{opacity: 1;}
+}
+
+.anim {
+    animation: appeartransition 2s;
+}
+
+.anim-out {
+    animation: fadeout 2s;
+}
+
+@keyframes appeartransition {
+    from {
+        transform: translateY(30%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        transform: translateY(10%);
+        opacity: 1;
+    }
+    to{
+        transform: translateY(0%);
+        opacity: 0;
+    }
+}
+
+
+/*@keyframes rotate2 {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(270deg); 
+    }
+}*/
+
+.logo{
+    height: 20%;
+    width: 60%;
+    left: 40rem;
+    top: 75rem;
+    position: absolute;
+}
+
+.dropbutton:hover{
+    cursor: pointer;
+}
+
+.special{
+    transform: rotate(90deg);
+}
+
+
+.sect {
+    border: black solid 2px;
+    padding: 2px;
+    margin: 5px;
+}
+
+
+.abtcontainer{
+    display: grid;
+    position: relative;
+    grid-template-columns: auto auto auto;
+   
+}
+
+.imag-band{
+    height: 350px;
+}
+
+
+.histcontainer {
+    display: grid;
+    grid-template-columns: 500px 1000px auto auto auto;
+}
+
+.item-1, .item-2,.item-3,.item-4{
+    border: black solid 2px;
+    margin: 5px;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.item-1 {
+    grid-column: 2 / span 6;
+}
+
+.item-2 {
+    grid-column: 1/ span 6;
+}
+
+.item-3 {
+    grid-column: 1/ span 7;
+}
+
+.item-4 {
+    grid-column: 1/ span 7;
+}
+
+#About {
+    padding: 5px;
+    position: relative;
+    grid-column: 2/3;
+}
+
+#History{
+    padding: 5px;
+    position: relative;
+}
+
+.fuzzyhat {
+    height: 400px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-column: 7;
+}
+
+.jazzcafe {
+    height: 300px;
+    padding-left: 5px;
+}
+
+#Albums {
+    padding-left: 25px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    position: relative;
+    
+}
+
+.album{
+    background-color: rgb(89, 47, 240);
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    justify-content: start;
+    height: 250px;
+    font-size: 15px;
+    outline-color: rgb(82, 158, 245);
+    outline-style: outset;
+    width: 900px;
+}
+
+.album #attributes {
+    color: white;
+    padding-top: 10px;
+}
+
+.dynamitetour, .bowie, .boeingjet, .waxx {
+    position: relative;
+    height: 250px;
+}
+
+.quote {
+    text-align: center;
+    height: 150px;
+    width: 400px;
+    position: relative;
+    bottom: 0px;
+    left: 800px;
+}
+
+.photos {
+    position: relative;
+    padding-left: 5px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10rem;
+}
+
+.collage {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    padding-left: 10px;
+    align-items: center;
+}
+
+.links-container {
+    background:linear-gradient(180deg, transparent, rgb(94, 174, 248));
+}
+
+.elems li {
+    list-style: none;
+    color: white;
+}
+
+.elems a:link, a:active, a:hover, a:visited{
+    color:white
+}
+
+.collapse div{
+    display: inline-block;
+}
+
+.nominated {
+    color: red;
+    background-color: rgb(253, 181, 193);
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.won {
+    color:green;
+    background-color: rgb(181, 253, 187);
+    border-radius: 5px;
+    margin: 5px;
+}
